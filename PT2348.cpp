@@ -10,10 +10,10 @@ void PT2348::setMain_in(int in_sel, int in_gain){
            switch(in_sel){
                case 0: in_sel = 0b00000000;break;
                case 1: in_sel = 0b00000001;break;
-               case 3: in_sel = 0b00000010;break;
-               case 4: in_sel = 0b00000011;break;
-               case 5: in_sel = 0b00000100;break;
-               case 6: in_sel = 0b00000101;break;
+               case 2: in_sel = 0b00000010;break;
+               case 3: in_sel = 0b00000011;break;
+               case 4: in_sel = 0b00000100;break;
+               case 5: in_sel = 0b00000101;break;
    }
            switch(in_gain){
                case 0: in_gain =  0b00000000;break;
@@ -63,7 +63,7 @@ void PT2348::setLoun_sub(int loud, int loun_off, int sub_f){
             switch(sub_f){
                case 0: sub_f = 0b00100000;break;
                case 1: sub_f = 0b01000000;break;
-               case 3: sub_f = 0b01100000;break;
+               case 2: sub_f = 0b01100000;break;
    } 
            writeWire(LOUN_SUB, loud+loun_off+sub_f); 
    }
@@ -496,10 +496,10 @@ void PT2348::setSecond_in(int in_sec_sel, int in_sec_gain, int main_second){
            switch(in_sec_sel){
                case 0: in_sec_sel = 0b00000000;break;
                case 1: in_sec_sel = 0b00000001;break;
-               case 3: in_sec_sel = 0b00000010;break;
-               case 4: in_sec_sel = 0b00000011;break;
-               case 5: in_sec_sel = 0b00000100;break;
-               case 6: in_sec_sel = 0b00000101;break;
+               case 2: in_sec_sel = 0b00000010;break;
+               case 3: in_sec_sel = 0b00000011;break;
+               case 4: in_sec_sel = 0b00000100;break;
+               case 5: in_sec_sel = 0b00000101;break;
    }
            switch(in_sec_gain){
                case 0: in_sec_gain =  0b00000000;break;
