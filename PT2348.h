@@ -5,7 +5,7 @@
 #ifndef PT2348_H
 #define PT2348_H
 
-#define PT2348_address 0b1000100
+#define PT2348_address 0x44
 
 #define MAIN_IN        0x00
 #define LOUN_SUB       0x01
@@ -17,8 +17,8 @@
 #define ATT_RF         0x07
 #define ATT_LR         0x08
 #define ATT_RR         0x09
-#define ATT_SUB        0x10
-#define SECOND_IN      0x11
+#define ATT_SUB        0x0A
+#define SECOND_IN      0x0B
 
 #include <Arduino.h>
 class PT2348
